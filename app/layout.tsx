@@ -6,9 +6,9 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-sans' });
 const dmSerif = DM_Serif_Display({ weight: '400', subsets: ['latin'], variable: '--font-serif' });
 
 export const metadata: Metadata = {
-  title: 'Apex Wellness | Premier Behavioral Healthcare Organization',
+  title: 'Apex Wellness | South Florida Behavioral Health Organization',
   description:
-    'Apex Wellness is the parent organization behind three world-class Intrepid treatment facilities in South Florida — Detox & Residential, Holistic Health Services, and Mental Health.',
+    'One organization. Three programs. Apex Wellness manages detox, residential, and outpatient behavioral health care across South Florida.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -20,18 +20,6 @@ export default function Header() {
   return (
     <>
       <div className="sticky top-0 z-50">
-        <div className="hidden lg:block bg-apex-navy text-white text-sm">
-          <div className="container px-4 sm:px-6 py-2 flex items-center justify-end gap-4 sm:gap-6">
-            <a href={PHONE_HREF} className="flex items-center gap-2 hover:text-apex-tealLight transition-colors">
-              <Phone className="h-3.5 w-3.5" strokeWidth={2} />
-              {PHONE}
-            </a>
-            <a href="#contact" className="font-semibold text-apex-tealLight hover:text-white transition-colors">
-              Get Help Now
-            </a>
-          </div>
-        </div>
-
         <header
           className={`bg-white border-b border-apex-border/70 transition-shadow duration-300 ${
             scrolled ? 'shadow-[0_4px_24px_rgba(15,50,84,0.10)]' : ''
@@ -47,8 +35,7 @@ export default function Header() {
                 ))}
               </nav>
 
-              <div className="hidden lg:flex flex-shrink-0 gap-3">
-                <a href="#contact" className="btn-secondary btn-sm">Get Help</a>
+              <div className="hidden lg:flex flex-shrink-0">
                 <a href={PHONE_HREF} className="btn-gold btn-sm">
                   <Phone className="h-4 w-4" strokeWidth={2} />
                   Call Now
@@ -78,8 +65,7 @@ export default function Header() {
               {label}
             </a>
           ))}
-          <a href="#contact" onClick={close} className="btn-secondary mt-6 justify-center">Get Help</a>
-          <a href={PHONE_HREF} onClick={close} className="btn-gold mt-3 justify-center">
+          <a href={PHONE_HREF} onClick={close} className="btn-gold mt-6 justify-center">
             <Phone className="h-4 w-4" />
             Call {PHONE}
           </a>

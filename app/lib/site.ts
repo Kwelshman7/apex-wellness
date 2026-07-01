@@ -1,17 +1,22 @@
-export const PHONE = '(833) 453-2739';
-export const PHONE_HREF = 'tel:+18334532739';
+export const PHONE = '(866) 591-9194';
+export const PHONE_HREF = 'tel:+18665919194';
 export const EMAIL = 'info@apexwellness.com';
 export const HQ_LOCATION = 'South Florida';
 
 export const HERO_FACILITY_IMAGE = '/images/facilities/detox-courtyard.jpg';
-export const HERO_LION_IMAGE = '/images/apex-lion-gold.png';
+export const HERO_VIDEO = '/videos/hero-drone-tour-polished.mp4';
 
 export const LOGO = {
   default: '/images/apex-wellness-logo-transparent.png',
   white: '/images/apex-wellness-logo-white.png',
-  alt: 'Apex Wellness',
+  hero: '/images/apex-wellness-logo-hero-light.png',
+  alt: 'Apex Wellness Group',
   width: 220,
   height: 82,
+  whiteWidth: 800,
+  whiteHeight: 298,
+  heroWidth: 800,
+  heroHeight: 298,
 } as const;
 
 export const NAV_LINKS = [
@@ -35,13 +40,12 @@ export const FACILITIES = [
   {
     id: 'detox',
     logo: '/images/irc-logo-hires.webp',
-    logoAlt: 'Intrepid Detox & Residential',
-    name: 'Intrepid Detox & Residential',
+    logoAlt: 'Intrepid Detox Residential',
+    name: 'Intrepid Detox Residential',
     location: 'Delray Beach, FL',
-    phone: '561-763-9414',
-    phoneHref: 'tel:+15617639414',
-    hook: 'Medically supervised detox and 24/7 residential care for individuals who need the highest level of clinical support.',
-    level: 'Detox + Residential',
+    tags: ['DETOX', 'RESIDENTIAL'],
+    description:
+      'Medically supervised detox and residential care for individuals who need 24/7 clinical support, safe stabilization, and a structured environment to begin recovery.',
     href: '#',
     photo: '/images/facilities/detox-courtyard.jpg',
     photos: [
@@ -57,13 +61,12 @@ export const FACILITIES = [
   {
     id: 'holistic',
     logo: '/images/ihhs-logo.png',
-    logoAlt: 'Intrepid Holistic Health Services',
-    name: 'Intrepid Holistic Health Services',
+    logoAlt: 'Intrepid Holistic Health',
+    name: 'Intrepid Holistic Health',
     location: 'Lake Worth, FL',
-    phone: null,
-    phoneHref: null,
-    hook: 'Intensive PHP for substance use disorder integrating evidence-based treatment with holistic healing modalities.',
-    level: 'Partial Hospitalization',
+    tags: ['PHP', 'IOP'],
+    description:
+      'Substance abuse partial hospitalization program (PHP) offering structured day treatment, clinical therapy, and holistic support for individuals in active recovery.',
     href: '#',
     photo: '/images/facilities/ihhs-reception.jpg',
     photos: [
@@ -78,10 +81,9 @@ export const FACILITIES = [
     logoAlt: 'Intrepid Mental Health',
     name: 'Intrepid Mental Health',
     location: 'West Palm Beach, FL',
-    phone: null,
-    phoneHref: null,
-    hook: 'Standalone primary mental health PHP for depression, anxiety, trauma, and bipolar disorder.',
-    level: 'Mental Health PHP',
+    tags: ['PHP', 'IOP'],
+    description:
+      'Primary mental health partial hospitalization program (PHP) for depression, anxiety, trauma, and related conditions — standalone psychiatric care, not addiction-adjacent.',
     href: '#',
     photo: '/images/facilities/imh-lobby.jpg',
     photos: [
@@ -112,7 +114,6 @@ export const ACCREDITATIONS = [
     logoWidth: 56,
     logoHeight: 56,
     desc: 'Licensed by the Florida Department of Children and Families for substance abuse and mental health treatment providers.',
-    tag: 'State of Florida',
   },
   {
     name: 'JCAHO Accredited',
@@ -120,22 +121,19 @@ export const ACCREDITATIONS = [
     logoWidth: 56,
     logoHeight: 56,
     desc: 'Accredited by The Joint Commission — the gold standard in healthcare quality and patient safety nationwide.',
-    tag: 'Gold Seal of Approval™',
   },
   {
     name: 'FARR Certified',
-    logo: '/images/farr-logo.svg',
-    logoWidth: 100,
-    logoHeight: 36,
+    logo: '/images/farr-logo.png',
+    logoWidth: 230,
+    logoHeight: 100,
     desc: 'Certified by the Florida Association of Recovery Residences for ethical, safe, recovery-focused residential care.',
-    tag: 'Florida Certified',
   },
   {
-    name: 'LegitScript Certified',
-    logo: null,
-    logoWidth: 0,
-    logoHeight: 0,
-    desc: 'Verified by LegitScript for legitimacy with insurers, advertising platforms, and patients seeking trusted care.',
-    tag: 'Verified Provider',
+    name: 'AHCA Licensed',
+    logo: '/images/ahca-logo.png',
+    logoWidth: 100,
+    logoHeight: 100,
+    desc: 'Licensed by the Florida Agency for Health Care Administration, authorizing our facilities to serve primary mental health and substance use treatment clients.',
   },
 ] as const;

@@ -23,7 +23,6 @@ export default function CoreProgramsSection() {
                   <Icon className="h-8 w-8 text-apex-teal" strokeWidth={1.6} />
                 </div>
                 <h3 className="heading text-2xl mb-4">{title}</h3>
-                <span className="gold-bar mb-5 block" />
                 <p className="body-copy text-[15px] leading-relaxed">{text}</p>
               </div>
             );

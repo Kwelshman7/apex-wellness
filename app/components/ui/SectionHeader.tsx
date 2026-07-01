@@ -10,8 +10,7 @@ export default function SectionHeader({ eyebrow, title, subtitle, align = 'cente
   return (
     <div className={`${isCenter ? 'mx-auto max-w-4xl text-center' : 'max-w-2xl'}`}>
       <p className="eyebrow">{eyebrow}</p>
-      <span className="gold-bar mt-4" style={isCenter ? {} : { margin: '16px 0 0 0' }} />
-      <h2 className={`heading mt-6 text-4xl md:text-5xl lg:text-[3.25rem] ${isCenter ? '' : 'text-left'}`}>
+      <h2 className={`heading mt-4 sm:mt-6 text-4xl md:text-5xl lg:text-[3.25rem] ${isCenter ? '' : 'text-left'}`}>
         {title}
       </h2>
       {subtitle && (

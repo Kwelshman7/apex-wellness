@@ -42,7 +42,7 @@ export default function ReferralPartnersSection() {
               level-of-care determinations, and expedited admissions for your patients.
             </p>
             <a href={PHONE_HREF} className="btn-gold mt-8">
-              Contact Professional Admissions
+              Refer a Client
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

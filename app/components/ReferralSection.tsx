@@ -27,8 +27,7 @@ export default function ReferralSection() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <p className="eyebrow text-apex-tealLight">Our Commitment</p>
-              <span className="gold-bar mt-4 block" />
-              <h2 className="mt-6 font-serif text-4xl md:text-5xl leading-tight text-white">
+              <h2 className="mt-4 sm:mt-6 font-serif text-4xl md:text-5xl leading-tight text-white">
                 We Will Always Help You Find the Right Care.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-white/80">
