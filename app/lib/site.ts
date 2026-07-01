@@ -1,7 +1,10 @@
 export const PHONE = '(866) 591-9194';
 export const PHONE_HREF = 'tel:+18665919194';
 export const EMAIL = 'info@apexwellness.com';
-export const HQ_LOCATION = 'South Florida';
+export const HQ_ADDRESS = {
+  line1: '1926 10th Ave N Suite 420',
+  line2: 'Lake Worth, FL 33461',
+} as const;
 
 export const HERO_FACILITY_IMAGE = '/images/facilities/detox-courtyard.jpg';
 export const HERO_VIDEO = '/videos/hero-drone-tour-polished.mp4';
@@ -42,7 +45,7 @@ export const FACILITIES = [
     logo: '/images/irc-logo-hires.webp',
     logoAlt: 'Intrepid Detox Residential',
     name: 'Intrepid Detox Residential',
-    location: 'Delray Beach, FL',
+    location: 'West Palm Beach, FL',
     tags: ['DETOX', 'RESIDENTIAL'],
     description:
       'Medically supervised detox and residential care for individuals who need 24/7 clinical support, safe stabilization, and a structured environment to begin recovery.',
@@ -53,7 +56,6 @@ export const FACILITIES = [
       { src: '/images/facilities/detox-exterior.jpg', alt: 'Intrepid Detox exterior campus' },
       { src: '/images/facilities/detox-entrance.jpg', alt: 'Intrepid Detox entrance' },
       { src: '/images/facilities/detox-lounge.jpg', alt: 'Intrepid Detox resident lounge' },
-      { src: '/images/facilities/detox-medical.jpg', alt: 'Intrepid Detox medical area' },
       { src: '/images/facilities/detox-aerial.jpg', alt: 'Intrepid Detox aerial campus view' },
       { src: '/images/facilities/detox-office.png', alt: 'Intrepid Detox office space' },
     ],
@@ -63,7 +65,7 @@ export const FACILITIES = [
     logo: '/images/ihhs-logo.png',
     logoAlt: 'Intrepid Holistic Health',
     name: 'Intrepid Holistic Health',
-    location: 'Lake Worth, FL',
+    location: 'Lake Worth Beach, FL',
     tags: ['PHP', 'IOP'],
     description:
       'Substance abuse partial hospitalization program (PHP) offering structured day treatment, clinical therapy, and holistic support for individuals in active recovery.',
@@ -80,7 +82,7 @@ export const FACILITIES = [
     logo: '/images/imh-logo.png',
     logoAlt: 'Intrepid Mental Health',
     name: 'Intrepid Mental Health',
-    location: 'West Palm Beach, FL',
+    location: 'Delray Beach, FL',
     tags: ['PHP', 'IOP'],
     description:
       'Primary mental health partial hospitalization program (PHP) for depression, anxiety, trauma, and related conditions — standalone psychiatric care, not addiction-adjacent.',

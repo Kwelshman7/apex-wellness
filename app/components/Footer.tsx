@@ -1,6 +1,6 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import Logo from './ui/Logo';
-import { PHONE, PHONE_HREF, EMAIL, HQ_LOCATION, FACILITIES, FOOTER_LINKS } from '../lib/site';
+import { PHONE, PHONE_HREF, EMAIL, HQ_ADDRESS, FACILITIES, FOOTER_LINKS } from '../lib/site';
 
 export default function Footer() {
   return (
@@ -19,9 +19,13 @@ export default function Footer() {
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 {EMAIL}
               </a>
-              <span className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 flex-shrink-0" />
-                {HQ_LOCATION}
+              <span className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 flex-shrink-0 mt-0.5" />
+                <span>
+                  {HQ_ADDRESS.line1}
+                  <br />
+                  {HQ_ADDRESS.line2}
+                </span>
               </span>
             </div>
           </div>
