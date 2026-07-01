@@ -51,7 +51,7 @@ body {
 
 /* ─── Hero composite: navy lion (left) + facility courtyard (right) ─── */
 .hero-section {
-  min-height: 460px;
+  min-height: calc(100svh - 76px);
 }
 @media (min-width: 640px) { .hero-section { min-height: 520px; } }
 @media (min-width: 1024px) { .hero-section { min-height: 580px; } }

@@ -28,9 +28,9 @@ export default function HeroSection() {
       <div className="hero-text-scrim absolute inset-0 pointer-events-none" aria-hidden="true" />
       <div className="hero-video-shade absolute inset-0 pointer-events-none" aria-hidden="true" />
 
-      <div className="container relative z-10 px-4 sm:px-6 pt-6 sm:pt-8 md:pt-12 lg:pt-14 pb-12 sm:pb-16 md:pb-20 lg:pb-24">
+      <div className="container relative z-10 flex min-h-[calc(100svh-76px)] flex-col justify-start px-4 sm:px-6 pt-2 sm:pt-4 md:pt-8 lg:pt-10 pb-10 sm:pb-14 md:pb-16 lg:pb-20">
         <div className="max-w-xl lg:max-w-2xl text-left">
-          <div className="hero-lockup mb-4 sm:mb-5">
+          <div className="hero-lockup mb-2 sm:mb-3">
             <Image
               src={LOGO.hero}
               alt={LOGO.alt}
@@ -38,22 +38,25 @@ export default function HeroSection() {
               height={LOGO.heroHeight}
               priority
               quality={100}
-              className="h-auto w-full max-w-[min(100vw-2rem,320px)] sm:max-w-[360px] md:max-w-[400px]"
+              className="h-auto w-full max-w-[min(100vw-2rem,260px)] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px]"
             />
-            <p className="eyebrow hero-eyebrow mt-3 sm:mt-4 text-[11px] sm:text-xs normal-case tracking-[0.12em] max-w-md">
+            <p className="eyebrow hero-eyebrow mt-2 sm:mt-3 text-[11px] sm:text-xs normal-case tracking-[0.12em] max-w-md">
               A Behavioral Health Management Company
             </p>
           </div>
 
-          <h1 className="font-serif text-[clamp(1.85rem,5.5vw,3.15rem)] leading-[1.08] text-white font-normal max-w-xl lg:max-w-2xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]">
-            Raising the Standard for Addiction and Mental Health Care
+          <h1 className="font-serif text-[clamp(1.55rem,4.25vw,2.75rem)] leading-[1.1] text-white font-normal max-w-xl lg:max-w-2xl drop-shadow-[0_2px_12px_rgba(0,0,0,0.35)]">
+            Raising the Standard for
+            <br />
+            Addiction &amp; Mental Health
+            <br />
+            Treatment
           </h1>
-          <p className="mt-4 sm:mt-5 text-[15px] sm:text-base md:text-lg text-white/92 leading-relaxed max-w-lg lg:max-w-xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.3)]">
-            Our facilities are built around compassionate care, strong clinical leadership, and a higher
-            standard of support for every individual we serve.
+          <p className="mt-3 sm:mt-4 text-[14px] sm:text-base md:text-lg text-white/90 leading-snug sm:leading-relaxed max-w-md lg:max-w-lg drop-shadow-[0_1px_8px_rgba(0,0,0,0.3)]">
+            A connected family of treatment programs built around compassionate, individualized care.
           </p>
 
-          <div className="mt-6 sm:mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
+          <div className="mt-5 sm:mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4">
             <a href="#contact" className="btn-gold w-full sm:w-auto justify-center">
               Get Help Now
               <ArrowRight className="h-4 w-4" />
