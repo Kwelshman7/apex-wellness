@@ -27,14 +27,14 @@ export default function ReferralSection() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
               <p className="eyebrow text-apex-tealLight">Our Commitment</p>
-              <h2 className="mt-4 sm:mt-6 font-serif text-4xl md:text-5xl leading-tight text-white">
+              <h2 className="mt-4 sm:mt-6 font-serif text-[clamp(1.75rem,5vw,3rem)] leading-tight text-white">
                 We Will Always Help You Find the Right Care.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-white/80">
                 Whether the issue is level of care, geography, insurance, or personal preference — our team connects
                 you with trusted providers anywhere in the United States when an Intrepid facility is not the right fit.
               </p>
-              <a href={PHONE_HREF} className="btn-gold mt-8">
+              <a href={PHONE_HREF} className="btn-gold mt-8 w-full sm:w-auto justify-center">
                 Speak With Our Team
                 <ArrowRight className="h-4 w-4" />
               </a>

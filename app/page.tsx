@@ -13,7 +13,7 @@ export default function Page() {
   return (
     <>
       <Header />
-      <main>
+      <main className="overflow-x-hidden">
         <HeroSection />
         <BrandsSection />
         <CoreProgramsSection />

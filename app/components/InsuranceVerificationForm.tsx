@@ -85,7 +85,7 @@ export default function InsuranceVerificationForm() {
 
   /* ── Success state ── */
   if (submitted) return (
-    <div className="flex flex-col items-center justify-center text-center gap-6 px-8 py-14 min-h-[520px]">
+    <div className="flex flex-col items-center justify-center text-center gap-6 px-4 py-12 sm:px-8 sm:py-14 min-h-[480px] sm:min-h-[520px]">
       <div className="relative flex h-24 w-24 items-center justify-center">
         <div className="absolute inset-0 rounded-full bg-green-100 animate-ping opacity-30" />
         <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-500 shadow-lg shadow-green-200">
@@ -117,7 +117,7 @@ export default function InsuranceVerificationForm() {
     <form onSubmit={submit} noValidate>
 
       {/* ── Header ── */}
-      <div className="px-7 pt-7 pb-5 border-b border-[#E8EFF7]">
+      <div className="px-4 pt-6 pb-5 sm:px-7 sm:pt-7 border-b border-[#E8EFF7]">
         <p className="text-[10px] font-bold uppercase tracking-[0.16em] mb-2 text-apex-gold">
           Free Insurance Verification
         </p>
@@ -131,10 +131,10 @@ export default function InsuranceVerificationForm() {
       </div>
 
       {/* ── Fields ── */}
-      <div className="px-7 py-5 flex flex-col gap-3.5">
+      <div className="px-4 py-5 sm:px-7 flex flex-col gap-3.5 min-w-0">
 
         {/* Row 1: First + Last */}
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {field('firstName', 'First Name', 'text', 'Jane',  form.firstName, v => set('firstName', v))}
           {field('lastName',  'Last Name',  'text', 'Smith', form.lastName,  v => set('lastName', v))}
         </div>
@@ -184,7 +184,7 @@ export default function InsuranceVerificationForm() {
         )}
 
         {/* Member ID + DOB */}
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {field('memberId', 'Member ID',     'text', 'e.g. XYZ123456', form.memberId, v => set('memberId', v))}
           {field('dob',      'Date of Birth', 'date', '',               form.dob,      v => set('dob', v))}
         </div>

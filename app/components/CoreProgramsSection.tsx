@@ -18,7 +18,7 @@ export default function CoreProgramsSection() {
           {CORE_PROGRAMS.map(({ title, text }, i) => {
             const Icon = ICONS[i];
             return (
-              <div key={title} className="card card-hover p-8 border-t-4 border-t-apex-teal">
+              <div key={title} className="card card-hover p-6 sm:p-8 border-t-4 border-t-apex-teal">
                 <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-apex-tealLight/50">
                   <Icon className="h-8 w-8 text-apex-teal" strokeWidth={1.6} />
                 </div>

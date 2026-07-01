@@ -44,8 +44,8 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div>
-            <div className="card overflow-hidden border-t-4 border-t-apex-gold shadow-card">
+          <div className="contact-form-column w-full lg:max-w-none">
+            <div className="card w-full overflow-hidden border-t-4 border-t-apex-gold shadow-card">
               <InsuranceVerificationForm />
             </div>
             <p className="mt-6 text-center text-sm text-apex-muted lg:text-left">

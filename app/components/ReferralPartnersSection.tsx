@@ -41,7 +41,7 @@ export default function ReferralPartnersSection() {
               Our professional admissions team is available 24 hours a day to assist with clinical consultations,
               level-of-care determinations, and expedited admissions for your patients.
             </p>
-            <a href={PHONE_HREF} className="btn-gold mt-8">
+            <a href={PHONE_HREF} className="btn-gold mt-8 w-full sm:w-auto justify-center">
               Refer a Client
               <ArrowRight className="h-4 w-4" />
             </a>
